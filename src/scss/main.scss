@@ -27,6 +27,8 @@ body {
 	font-family: 'Geometria', sans-serif;
 	font-size: 20px;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	min-width: 1280px;
 }
 
 .container {
