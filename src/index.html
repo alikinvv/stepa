@@ -1,0 +1,1374 @@
+//= template/header.html
+<!-- START CONTENT  -->
+
+<div class="loader">
+    <img src="img/logo.svg" width="400" alt="">
+</div>
+
+<div class="menu">
+    <div class="container">
+        <div>
+            <nav>
+                <a href="javascript:void(0)" data-scroll="apartments">Выбор квартиры</a>
+                <a href="javascript:void(0)" data-scroll="features">Безопасная среда</a>
+                <a href="javascript:void(0)" data-scroll="dreams">О микрорайоне</a>
+                <a href="javascript:void(0)" data-scroll="secure">Эскроу-счета</a>
+                <a href="javascript:void(0)" data-scroll="rooms">Отделка</a>
+                <a href="javascript:void(0)" data-scroll="apartments">Планировки</a>
+                <a href="javascript:void(0)" data-scroll="view">Вид из окон</a>
+                <a href="javascript:void(0)" data-scroll="map">Расположение</a>
+                <a href="javascript:void(0)" data-scroll="inside">О доме</a>
+                <a href="javascript:void(0)" data-scroll="ways">Способы приобретения</a>
+                <a href="javascript:void(0)" data-scroll="company">О застройщике</a>
+                <a href="javascript:void(0)" data-scroll="company">Ход строительства</a>
+                <a href="javascript:void(0)" data-scroll="company">Онлайн-трансляция</a>
+                <a href="javascript:void(0)" data-scroll="footer">Контакты</a>
+            </nav>
+        </div>
+        <div>
+            <img src="img/map.jpg" alt="">
+            <p><strong>Отдел продаж застройщика «Оникс»:</strong> <br>
+                    ул. Николая Островского, 44а <br>
+                    +7 (342) 2-999-888</p>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="flex">
+            <div class="header__hamburger"><span></span></div>
+            <a href="/" class="header__logo"><img src="img/logo.svg" alt=""></a>
+        </div>
+        <nav class="header__menu">
+            <a href="#view" data-scroll="view">Вид из окон</a>
+            <a href="#stream" data-scroll="company">Трансляция со стройки</a>
+        </nav>
+        <a href="tel:+73422999888" class="header__phone">+7 (342) <span>2-999-888</span></a>
+        <a href="javascript:void(0)" data-modal="more" class="btn">Заказать звонок</a>
+    </div>
+</header>
+
+<section class="main">
+    <div class="map__overflow">
+        <div class="map__toggle"></div>
+        <img src="img/stepa.png" alt="" class="main__stepa">
+
+        <div class="main__info">
+            <a href="javascript:void(0)" data-modal="more" class="btn btn-yellow">ЭСКРОУ-СЧЕТА</a>
+            <h2 class="main__title">Из районных великанов <br> <span class="t2">Самый главный</span> <br> <span class="t3">великан!</span></h2>
+            <p class="main__addr">ул. Буксирная, 10 <br> <span>(м/р Водники)</span></p>
+            <a href="javascript:void(0)" class="main__btn btn" data-modal="call">Подобрать квартиру</a>
+
+            <div class="main__desc">
+                Архитектурная модель здания без учета окружающей <br>
+                застройки и прилегающего к зданию рельефа с элементами <br>
+                художественного вымысла.
+            </div>
+        </div>        
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('img/main1.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/main2.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/main3.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/main4.jpg')"></div>
+        </div>
+        <div class="main-pag swiper-pagination"></div>
+    </div>
+
+    <img src="img/call.svg" width="80" alt="" class="call">
+    <div class="callme">
+        <div class="callme__close"></div>
+        <div class="callme__content">
+            <p class="callme__title">Здравствуйте. Хотите, <br> чтобы мы перезвоним вам?</p>
+            <p>Оставьте свои контакты и через 5 минут <br> с вами свяжется наш менеджер. </p>
+            <form class="callme__form" method="POST" action="">
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="phone">Телефон</label>
+                </div>
+                <button class="btn btn-blue" type="submit">Позвоните мне!</button>
+            </form>
+            <span>Нажимая на кнопку «Позвоните мне», я даю <br>
+                    своё согласие на обработку моих <br>
+                    персональных данных и <a href="javascript:void(0)" data-modal="policy">принимаю условия <br>
+                        соглашения</a></span>
+        </div>
+    </div>
+</section>
+
+<section class="start">
+    <div class="container">
+        <h3 class="start__title">старт <br> <span>продаж!</span></h3>
+        <div class="start__count">
+            <span class="start__num">1,1</span>
+            <div class="start__rub">
+                <span>млн</span>
+                <span>рублей</span>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="start__btn btn btn-white" data-modal="price">Получить прайс</a>
+    </div>
+</section>
+
+<section class="features" data-scroll="features">
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div style="background-image: url('img/f1.jpg')" class="features__img"></div>
+                    <div class="features__info">
+                        <div>
+                            <p class="features__title">без колясок <br> и велосипедов <br> в квартире</p>
+                            <p class="features__text">Еще больше удобств для мам и велосепедистов,
+                                коляски и велосипеды могут храниться в
+                                специальном помещении в цокольном этаже
+                                дома.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url('img/f2.jpg')" class="features__img"></div>
+                    <div class="features__info">
+                        <div>
+                            <p class="features__title">Умный домофон</p>
+                            <p class="features__text">Безопасный доступ в Вашу квартиру, без
+                                установки домофона в квартире.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url('img/f3.jpg')" class="features__img"></div>
+                    <div class="features__info">
+                        <div>
+                            <p class="features__title">Порядок <br> и отсутствие <br> посторонних</p>
+                            <p class="features__text">Служба консьержа в холле дома обеспечит
+                                полный контроль за доступом в дом, но и во
+                                внутренний двор.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url('img/f4.jpg')" class="features__img"></div>
+                    <div class="features__info">
+                        <div>
+                            <p class="features__title">Ваше спокойствие — <br> наша забота</p>
+                            <p class="features__text">Въезд на территорию жилого дома - только для
+                                своих. Пункт охраны оборудован тревожной
+                                кнопкой. <br><br>
+                                
+                                Видеонаблюдение предусмотрено по всему
+                                периметру дома.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url('img/f5.jpg')" class="features__img"></div>
+                    <div class="features__info">
+                        <div>
+                            <p class="features__title">Автономная <br> котельная</p>
+                            <p class="features__text">Автономная газова котельная, отапливающая 
+                                один дом, а не тысячи. Если в квартирах 
+                                становится слишком жарко, можно легко 
+                                уменьшить расход топлива, а в морозные дни – 
+                                увеличить. Благодаря этому температура в 
+                                помещениях всегда будет оптимальной, 
+                                устраивающей каждого из обитателей. Не 
+                                придется проветривать помещения, снижая 
+                                температуру и вместе с тем выпуская на улицу 
+                                тепло, за которое заплачены немалые деньги. 
+                                Но в то же время не придется пользоваться 
+                                дополнительными источниками тепла 
+                                (электрическими нагревателями), чтобы 
+                                поддерживать достаточно высокую температуру в 
+                                квартире.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url('img/f6.jpg')" class="features__img"></div>
+                    <div class="features__info">
+                        <div>
+                            <p class="features__title">Ничего лишнего <br> в квартире — <br> всё в кладовых!</p>
+                            <p class="features__text">Кладовая в подвале дома —
+                                выигрышное решение организации системы 
+                                хранения! <br> <br>
+                                
+                                <strong>Нежилые площади позволят сэкономить 
+                                        ценные квадратные метры жилья для 
+                                        комфорта вашей семьи. </strong> <br><br>
+                                
+                                Отдельная кладовая — решение в пользу 
+                                комфорта и выгоды!</p>
+                        </div>
+                        <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div style="background-image: url('img/f7.jpg')" class="features__img"></div>
+                    <div class="features__info">
+                        <div>
+                            <p class="features__title">Дом, где есть двор!</p>
+                            <p class="features__text">Для семей с детьми и будущих родителей в жилом 
+                                доме «Дядя Стёпа предусмотрена тематическая 
+                                развивающая площадка для детей разного 
+                                возраста с мягким покрытием для комфортных 
+                                игр. <br> <br>
+                                
+                                <strong>Здесь каждому ребенку будет интересно 
+                                        и весело, а главное, безопасно!</strong></p>
+                        </div>
+                        <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-next swiper-button-next"></div>
+    <div class="features-prev swiper-button-prev"></div>
+</section>
+
+<section class="dreams" data-scroll="dreams">
+    <div class="container">
+        <div class="dreams__item">
+            <div class="dreams__link">
+                <div class="dreams__img" style="background-image: url('img/infr.svg')"></div>
+                <span class="dreams__title">инфраструктура</span>
+            </div>
+            <div class="dreams__info dreams__info-right">
+                <p class="dreams__subtitle">Расположен для жизни</p>
+                <p class="dreams__text">Отдельно нужно сказать, что здесь развита вся <br>
+                    необходимая инфраструктура. В шаговой  <br>
+                    доступности детские сады и центры развития,  <br>
+                    школы, 2 поликлиники, стадион, несколько  <br>
+                    торговых центров, также на  Водниках, насколько  <br>
+                    можно судить, нет недостатка в небольших  <br>
+                    городских кафе и тем более в сетевых  <br>
+                    супермаркетах. Подобные плюсы инфраструктуры  <br>
+                    не стоит недооценивать: комфортная жизнь  <br>
+                    людей, населяющих этот прекрасный и  <br>
+                    экологически чистый район, расположенный  <br>
+                    вдали от шума и суеты центра города, во многом  <br>
+                    зависит именно от них.</p>
+            </div>
+        </div>
+        <div class="dreams__item">
+            <div class="dreams__link">
+                <span class="dreams__title">территория</span>
+                <div class="dreams__img" style="background-image: url('img/child.svg')"></div>
+            </div>
+            <div class="dreams__info dreams__info-left">
+                <p class="dreams__subtitle">Территория новой <br> жизни</p>
+                <p class="dreams__text">Что будет, если убрать из двора  <br>
+                    парковку? <br>
+                    Это будет дом, где люди уважают  <br>
+                    себя. Где подход к жизнии  <br>
+                    ценности другие. Дом, во дворе  <br>
+                    которого все продумано до  <br>
+                    мелочей. Двор, где хочется  <br>
+                    провсети свободное время. <br>
+                    Двор для безопасных игр детей.  <br>
+                    Двор, украшением которого  <br>
+                    будут не капоты и багажники, а  <br>
+                    клумбы и газоны. </p>
+            </div>
+        </div>
+        <div class="dreams__item">
+            <div class="dreams__link">
+                <div class="dreams__img" style="background-image: url('img/house.svg')"></div>
+                <span class="dreams__title">о доме</span>
+            </div>
+            <div class="dreams__info dreams__info-right">
+                <p class="dreams__subtitle">Во всём <br> на высоте</p>
+                <p class="dreams__text">«Дядя Стёпа» —  <br>
+                    это дом комфорт-класса, а значит  <br>
+                    жильцам дома обеспечен <br>
+                    полноценный набор  <br>
+                    инфраструктуры: от социальной  <br>
+                    до бытовой.  <br>
+                    По нормативам и существующей  <br>
+                    инфраструктуры района в  <br>
+                    зависимости от размера проекта  <br>
+                    в комфорт-классе имеются школа,  <br>
+                    детский сад, поликлиника. Так же  <br>
+                    в проект строительства  <br>
+                    обязательно входит наличие  <br>
+                    ухоженной и развитой  <br>
+                    придомовой территории - <br>
+                    детской площадки, озеленения,  <br>
+                    ландшафтного дизайна.</p>
+            </div>
+        </div>
+        <div class="dreams__item">
+            <div class="dreams__link">
+                <span class="dreams__title">о районе</span>
+                <div class="dreams__img" style="background-image: url('img/forest.svg')"></div>
+            </div>
+            <div class="dreams__info dreams__info-left">
+                <p class="dreams__subtitle">экология – <br> несомненный плюс!</p>
+                <p class="dreams__text">Микрорайон Водники в Кировском районе —   <br>
+                    это прекрасный «зеленый» и безопасный район.  <br>
+                    Дышится здесь легко. Идеальный район для  <br>
+                    ежедневных прогулок и пробежек вдоль кромки  <br>
+                    хвойного леса и рыбалки на том самом киношном  <br>
+                    затоне.  <br>
+                    Район активно застраивается, сегодня жилые  <br>
+                    кварталы здесь продолжают расти, на смену  <br>
+                    двухэтажным домам приходит современная  <br>
+                    высотная застройка.  <br>
+                    Удобная транспортная развязка позволит за  <br>
+                    считанные минуты добраться до любого района  <br>
+                    города. К вашим услугам 2 моста на выбор,  <br>
+                    16 маршрутов общественного транспорта и  <br>
+                    выделенная полоса до центра. </p>
+            </div>
+        </div>
+
+        <div class="dreams__description">
+            <strong>Мечты сбываются ТУТ!</strong><br><br>
+
+            «Дядя Стёпа» — это новый современный <br>
+            жилой дом, который совсем скоро появится <br>
+            в Кировском районе на ул. Буксирная.
+        </div>
+    </div>
+</section>
+
+<section class="secure" data-scroll="secure">
+    <div class="container">
+        <h3>Мы используем НОВЫЙ БЕЗОПАСНЫЙ инструмент расчетов по ДДУ. <br> <span>Эскроу-счета.</span></h3>
+        <ol>
+            <li>Средства на счетах эскроу застрахованы АСВ в размере до 10 млн. руб.</li>
+            <li>Денежные средства перечисляются застройщику после ввода дома в эксплуатацию</li>
+            <li>Банк не взымает вознаграждение за открытие и сопровождение счета</li>
+        </ol>
+    </div>
+</section>
+
+<section class="rooms" data-scroll="rooms">
+    <div class="container">
+        <h2 class="blue">Удобство в ЧИСТОМ виде</h2>
+        <p>Вы приобретаете квартиру с отделкой, и тогда, всё, что вам останется сделать – это завезти
+            мебель и свои личные вещи. Вам не придется тратить время и силы на ремонт, и вы сэкономите на отделочных 
+            материалах, так как мы закупаем их оптом.</p>
+        <p><strong>Мы покупаем материалы у проверенных поставщиков и даем гарантию на наши отделочные работы 5 лет!</strong></p>
+
+        <div class="rooms__block">
+            <div class="rooms__item">
+                <img class="rooms__img" src="img/room1.jpg" alt="">
+                <p class="rooms__title">Чистовая</p>
+                <ul>
+                    <li>разводка электрики с установкой <br> электрофурнитуры</li>
+                    <li>разводка труб до квартиры без разводки по <br> помещениям квартиры</li>
+                    <li>стеклопакеты</li>
+                    <li>радиаторы</li>
+                    <li>полотенцесушители</li>
+                    <li>индивидуальные приборы учета</li>
+                    <li>входная металлическая дверь</li>
+                    <li>выровненные стены подготовленные под <br> оклейку обоями </li>
+                    <li>стяжка пола</li>
+                </ul>
+            </div>
+            <div class="rooms__item">
+                <img class="rooms__img" src="img/room2.jpg" alt="">
+                <p class="rooms__title">Комфорт</p>
+                <ul>
+                    <li>межкомнатные двери</li>
+                    <li>обои</li>
+                    <li>линолеум</li>
+                    <li>раковина</li>
+                    <li>унитаз</li>
+                    <li>белая стальная ванна или поддон</li>
+                    <li>сантехника</li>
+                    <li>плитка на полу и фартук в зоне ванны</li>
+                    <li>на кухне установлена мойка</li>
+                </ul>
+            </div>
+            <div class="rooms__item">
+                <img class="rooms__img" src="img/room3.jpg" alt="">
+                <p class="rooms__title">Комфорт+</p>
+                <ul>
+                    <li>ламинат на полу</li>
+                    <li>в санузле полностью плитка от пола до <br> потолка</li>
+                    <li>скрытая разводка труб в санузле</li>
+                    <li>плитка на полу балкона</li>
+                    <li>зеркало над раковиной в санузле</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="apartments" data-scroll="apartments">
+    <div class="container">
+        <h2>В квартирах рационально используется <br> каждый метр</h2>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="apartments__item">
+                        <p class="apartments__title">1-комнатные <br>
+                                <span>от 21,58 до 36,32 м2</span></p>
+                        <img src="img/1.svg" alt="" class="apartments__img">
+                        <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartments1">Узнать подробнее</a>
+                    </div>
+                    <div class="apartments__item">
+                        <p class="apartments__title">2-комнатные <br>
+                                <span>от 40,55 до 50,53 м2</span></p>
+                        <img src="img/2.svg" alt="" class="apartments__img">
+                        <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartments2">Узнать подробнее</a>
+                    </div>
+                    <div class="apartments__item">
+                        <p class="apartments__title">3-комнатные <br>
+                                <span>от 54,45 до 60,32 м2</span></p>
+                        <img src="img/3.svg" alt="" class="apartments__img">
+                        <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartments3">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="apartments__item">
+                        <p class="apartments__title">студия<br>
+                            <span>от 20,75 до 25,40 м2</span></p>
+                        <img src="img/4.svg" alt="" class="apartments__img">
+                        <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartmentss">Узнать подробнее</a>
+                    </div>
+                    <div class="apartments__item">
+                        <p class="apartments__title">евродвушка<br>
+                                <span>от 39,59 до 41,05 м2</span></p>
+                        <img src="img/5.svg" alt="" class="apartments__img">
+                        <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartmentse2">Узнать подробнее</a>
+                    </div>
+                    <div class="apartments__item">
+                        <p class="apartments__title">евротрёшка<br>
+                                <span>от 53,40 до 54,45 м2</span></p>
+                        <img src="img/6.svg" alt="" class="apartments__img">
+                        <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartmentse3">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartments-next swiper-button-next"></div>
+    <div class="apartments-prev swiper-button-prev"></div>
+
+    <img src="img/woman.png" alt="" class="apartments__woman">
+</section>
+
+<section class="questions" data-scroll="questions">
+    <div class="container">
+        <h2>Остались вопросы? <br>
+            <span>Оставьте заявку и получите подборку планировок с ценами</span></h2>
+        <form class="questions__form" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="email" name="email" placeholder="Ваш e-mail">
+            <button class="btn btn-yellow" type="submit">Оставить заявку</button>
+        </form>
+        <p class="questions__desc">Нажимая кнопку «Оставить заявку», <a href="javascript:void(0)" data-modal="policy">Вы соглашаетесь с условиями обработки и хранения персональных данных</a></p>
+    </div>
+</section>
+
+<section class="view" data-scroll="view">
+    <div class="container">
+        <h2 class="blue">Встречайте солнце первыми!</h2>
+        <nav class="view__nav">
+            <a class="active" href="javascript:void(0)" data-slider="one">9-10 этаж</a>
+            <a href="javascript:void(0)" data-slider="two">15-16 этаж</a>
+            <a href="javascript:void(0)" data-slider="three">25-26 этаж</a>
+        </nav>
+    </div>
+
+    <div class="one active swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('img/91.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/92.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/93.jpg')"></div>
+        </div>
+    </div>
+
+    <div class="two swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('img/151.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/152.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/153.jpg')"></div>
+        </div>
+    </div>
+
+    <div class="three swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('img/251.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/252.jpg')"></div>
+        </div>        
+    </div>
+
+    <div class="view-next swiper-button-next"></div>
+    <div class="view-prev swiper-button-prev"></div>
+    <div class="view-pag swiper-pagination"></div>
+</section>
+
+<section class="map" data-scroll="map">
+    <div class="map__yandex" id="map"></div>
+    <div class="map__overflow">
+        <div class="map__toggle"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2 class="map__title">Удобно, когда <br> всё близко!</h2>
+                    <p class="map__text">Отвести ребёнка в садик, отправить в школу 
+                            и успеть за покупками? Привести себя в порядок 
+                            в салоне красоты и успеть на тренировку? 
+                            Всё это можно сделать недалеко от дома. 
+                            Он удачно расположен внутри района и 
+                            транспортно доступен. <br><br>
+                            
+                            Мы строим дом, который подойдёт для 
+                            комфортной жизни активных горожан. <br>
+                            <strong>Дом, где рядом будет всё необходимое 
+                                    для комфортной жизни счастливой семьи!</strong></p>
+                    <a href="javascript:void(0)" class="map__btn btn" data-modal="more">Узнать подробнее</a>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="map__title">До центра рукой <br>
+                            подать!</h2>
+                    <p class="map__text">Жилой дом «Дядя Стёпа» расположен 
+                            в микрорайоне Водники в Кировском районе. 
+                            Жители любят свой район за удобную 
+                            инфраструктуру, за то, что он сочетает в себе 
+                            близость к центру (20 минут до центра города 
+                            на машине) и возможность наслаждаться лесом 
+                            и рекой. <br><br>
+                            
+                            <strong>Удобная транспортная развязка 
+                                    и 17 маршрутов общественного 
+                                    транспорта!</strong></p>
+                    <a href="javascript:void(0)" class="map__btn btn" data-modal="more">Узнать подробнее</a>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="map__title">Всё просто — <br>
+                            квартиры от 1,1 млн!</h2>
+                    <p class="map__text">Доступные цены на жилье комфорт-класса вот, 
+                            что отличает жилой дом «Дядя Стёпа» от группы 
+                            компаний «Оникс». <br> <br>
+                                
+                            Здесь вы сможете подобрать квартиру с удобными 
+                            для вас характеристиками по привлекательной цене. <br><br>
+                            
+                            <strong>Доступный уют в доме «Дядя Степа»!</strong></p>
+                    <a href="javascript:void(0)" class="map__btn btn" data-modal="more">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="map-pag swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="inside" data-scroll="inside">
+    <div class="photo swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('img/features2.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/features1.jpg')"></div>
+        </div>
+    </div>
+
+    <div class="text">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>Микроклимат <br> в квартире</h2>
+                    <p>Прекрасный микроклимат в квартирах обеспечивают:</p>
+                    <ul>
+                        <li>стеклопакеты с энергосберегающим напылением</li>
+                        <li>тепломый пол в особо холодных зонах, это в прихожей 
+                                и у балкона </li>
+                        <li>система вентиляции с приточными клапанами, с такой 
+                                системой  в любую погоду будет поступать свежий 
+                                воздух, так же это гарантия отсутствия сквозняков и 
+                                шума с улицы</li>
+                        <li>дополнительная шумоизоляция</li>
+                        <li>горизонтальная система водоснабжения и отопления</li>
+                        <li>счётчики на отопление, электричество и воду</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn-yellow" data-modal="more">Узнать подробнее</a>
+                </div>
+                <div class="swiper-slide">
+                    <h2>Холл</h2>
+                    <p>Холл  — это место, куда приятно заходить и в котором 
+                    хочется находиться. <br><br>
+                    
+                    <strong>Интерьер холла создан по индивидуальному 
+                            дизайн-проекту с использованием 
+                            экологичных материалов. </strong><br><br>
+                    
+                    Для удобства жильцов в холле предусмотрена 
+                    комфортная зона ожидания с местами общего 
+                    пользования, включая санузел. 
+                     
+                    </p>
+                    <a href="javascript:void(0)" class="btn btn-yellow" data-modal="more">Узнать подробнее</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="inside-next swiper-button-next"></div>
+    <div class="inside-prev swiper-button-prev"></div>
+</section>
+
+<section class="ways" data-scroll="ways">
+    <div class="container">
+        <h2>Способы приобретения</h2>
+        <nav class="ways__nav">
+            <a href="javascript:void(0)" class="active" data-tab="mortgage">Ипотека</a>
+            <a href="javascript:void(0)" data-tab="installment">рассрочка</a>
+            <a href="javascript:void(0)" data-tab="tradein">trade-in</a>
+            <a href="javascript:void(0)" data-tab="gos">госпрограммы</a>
+        </nav>
+        <div class="ways__body">
+            <div class="active ways__tab" data-tab="mortgage">
+                <p class="ways__title">выгодные условия ипотеки!</p>
+                <p>Максимально выгодные условия от ведущих банков - ставка от 9,7%; первоначальный взнос от 10%. 
+                        Бронируем квартиру под вас до получения одобрения. <br>
+                        Юридическое сопровождение на всех этапах сделки сделает покупку легкой и комфортной.</p>
+                <div class="ways__banks">
+                    <div class="ways__bank"><img src="img/vtb.png" alt=""><span>ставка от 9,7%</span></div>
+                    <div class="ways__bank"><img src="img/bank.png" alt=""><span>ставка от 9,99%</span></div>
+                </div>
+                <p><strong>Рассчитать и подобрать выгодный для вас ипотечный кредит <br>
+                        помогут наши специалисты.</strong></p>
+                <a href="javascript:void(0)" class="btn btn-gray" data-modal="mortgage">Рассчитать</a>
+            </div>
+            <div class="ways__tab" data-tab="installment">
+                <p class="ways__title">рассрочка 0%!</p>
+                <p><strong>Воспользуйтесь беспроцентной рассрочкой от застройщика для приобретения любой квартиры.</strong></p>
+                <p>Первоначальный взнос не менее 20% от стоимости приобретаемой квартиры. На оставшуюся сумму согласуем индивидуальный график платежей. Рассрочка возможна на любой срок, не превышающий 1 мая 2021 г.</p>
+                <a href="javascript:void(0)" class="btn btn-gray center" data-modal="installment">Отправить заявку</a>
+            </div>
+            <div class="ways__tab" data-tab="tradein">
+                <p><strong>Приобретайте новую квартиру по программе «Trade-in». </strong></p>
+                <p>Наши специалисты осуществят продажу вашей квартиры в наиболее короткие сроки по согласованной с вами цене. И в это же время договор с минимальным первоначальным взносом в 5% от стоимости приобретаемой квартиры, зафиксирует цену и квартиру за вами. </p>
+                <p><strong>Юридическое сопровождение купли-продажи и услуга оценки - бесплатные.</strong></p>
+                <a href="javascript:void(0)" class="btn btn-gray center" data-modal="tradein">Отправить заявку</a>
+            </div>
+            <div class="ways__tab" data-tab="gos">
+                <p><strong>Используйте в оплате все виды сертификатов и материнский капитал.</strong></p>
+                <p>Поможем выбрать оптимальный вариант использования материнского капитала с учетом ваших интересов. Возможно использовать как первоначальный взнос по ипотеке, рассрочке или единовременной оплате за квартиру. </p>
+                <p>При необходимости наши специалисты помогут скомбинировать разные варианты оплаты в одной сделке.</p>
+                <a href="javascript:void(0)" class="btn btn-gray center" data-modal="request">Отправить заявку</a>
+            </div>
+        </div>
+    </div>
+    <img src="img/family.svg" alt="" class="ways__family">
+</section>
+
+<section class="questions orange" data-scroll="questions">
+    <div class="container">
+        <h2><span>эскроу-счета. Одобрено!</span></h2>
+        <form class="questions__form" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="email" name="email" placeholder="Ваш e-mail">
+            <button class="btn btn-yellow" type="submit">Узнать подробности</button>
+        </form>
+        <p class="questions__desc">Нажимая кнопку «Оставить заявку», <a href="javascript:void(0)" data-modal="policy">Вы соглашаетесь с условиями обработки и хранения персональных данных</a></p>
+    </div>
+</section>
+
+<section class="company" data-scroll="company">
+    <div class="container">
+        <nav class="company__nav">
+            <a href="javascript:void(0)" class="active" data-tab="company">о застройщике</a>
+            <a href="javascript:void(0)" data-tab="path">ход строительства</a>
+            <a href="javascript:void(0)" data-tab="online">Онлайн-трансляция</a>
+        </nav>
+        <div class="active company__tab" data-tab="company">
+            <div class="flex">
+                <img src="img/onix.svg" width="219" alt="">
+                <div>
+                    <p>Группа компаний «Оникс» является надежным застройщиком на рынке строительства Перми. Компания специализируется на каркасно-монолитном домостроении. Все проекты отличаются индивидуальным подходом и ориентированы на максимальный комфорт и качество жизни.</p>
+                    <p>Группа компаний «Оникс» применяет самые прогрессивные технологии, постоянно повышая уровень своего опыта. Использует современные материалы и технологии, обеспечивая оптимальное соотношение цены и качества реализуемых нами объектов. </p>
+                    <p>Производственный потенциал компании, опыт и профессионализм сотрудников, четкое и своевременное выполнение задач позволили заслужить доверие партнеров и покупателей недвижимости. </p>
+                    <p>Группа компаний «Оникс» не стремится продать как можно больше метров, но стремится сделать каждый метр максимально комфортным и полезным для владельцев квартир. </p>
+                </div>
+            </div>
+            <div class="company__documents">
+                <div class="company__title">Документация</div>
+                <div class="company__forms">
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">Информация об объекте строительства</option>
+                            <option value="">Информация об объекте строительства</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Информация о застройщике</option>
+                            <option value="">Информация о застройщике</option>
+                        </select>
+                    </form>
+                    <a href="javascript:void(0)" class="company__policy">Политика группы компаний «Оникс» в отношении обработки персональных данных</a>
+                </div>
+            </div>
+        </div>
+        <div class="company__tab" data-tab="path">
+            <nav class="company__nav">
+                <a href="javascript:void(0)" class="active" data-tab="2019">2019</a>
+                <a href="javascript:void(0)" data-tab="2020" disable>2020</a>
+                <a href="javascript:void(0)" data-tab="2021" disable>2021</a>
+            </nav>
+            <div class="active company__tab" data-tab="2019">
+                <nav class="company__nav company__nav-sub">
+                    <a href="javascript:void(0)" data-tab="19april">Апрель</a>
+                    <a href="javascript:void(0)" data-tab="19may">Май</a>
+                    <a href="javascript:void(0)" class="active" data-tab="19june">Июнь</a>
+                    <a href="javascript:void(0)" data-tab="19july">Июль</a>
+                    <a href="javascript:void(0)" disable data-tab="19august">Август</a>
+                    <a href="javascript:void(0)" disable data-tab="19september">Сентябрь</a>
+                    <a href="javascript:void(0)" disable data-tab="19october">Октябрь</a>
+                    <a href="javascript:void(0)" disable data-tab="19noveber">Ноябрь</a>
+                    <a href="javascript:void(0)" disable data-tab="19december">Декабрь</a>
+                </nav>
+                <div class="company__tab" data-tab="19april">
+                    <div class="april19 swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company__tab" data-tab="19may">
+                    <div class="may19 swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company__tab active" data-tab="19june">
+                    <div class="june19 swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company__tab" data-tab="19july">
+                    <div class="july19 swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="company__tab" data-tab="2020"></div>
+            <div class="company__tab" data-tab="2021"></div>
+
+            <div class="company-next swiper-button-next"></div>
+            <div class="company-prev swiper-button-prev"></div>
+        </div>
+        <div class="company__tab" data-tab="online">
+                <iframe width="100%" height="656" src="https://www.youtube.com/embed/DGQwd1_dpuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" data-scroll="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__col">
+                <img src="img/logo-footer.svg" width="190" alt="">
+            </div>
+            <div class="footer__col">
+                <p><strong>Офис продаж:</strong> <br> Пермь, ул. Николая Островского, 44а, 3 этаж <br> <a href="tel:+73422999888">тел.: +7 (342) 2-999-888</a></p>
+            </div>
+            <div class="footer__col">
+                <a href="mailto:info@onix.ru">e-mail.: info@onix.ru</a>
+                <a href="www.onix.info.ru" target="_blank">www.onix.info.ru</a>
+            </div>
+        </div>
+        <p>Застройщик вправе вносить изменения в проектную документацию до момента ввода многоквартирного дома в эксплуатацию. Изображения отделки квартир и мест общего пользования, холлов, а также 
+                изображения придомовой территории являются компьютерной моделью и могут отличаться от фактического исполнения, что может быть связано с искажением цветопередачи при просмотре и печати 
+                изображения и прочими факторами. Изображения отделки квартир, мест общего пользования, холлов, а также изображения придомовой территории могут содержать элементы художественного вымысла. 
+                Изображенные мебель, бытовая техника, предметы интерьера в состав и стоимость отделки не входят. Застройщик группа компаний «Оникс». Проектная декларация размещена на сайте onix.info.ru 
+                С подробной информацией о помещениях, об условиях их приобретения, об условиях акций можно ознакомиться на сайте застройщика и 
+                в офисе продаж по адресу г. Пермь, ул. Николая Островского, 44а. Предложение не является публичной офертой.</p>
+    </div>
+    <img src="img/footer.png" alt="" class="footer__man">
+</footer>
+
+<div class="backdrops"></div>
+
+<div class="modals">
+    <div class="modal" data-modal="request">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на покупку <br> с сертификатом</p>
+        <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер. </p>
+        <form method="POST" class="request__form">
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="name">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="phone">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email">
+                <label for="" name="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="check">
+                <label for="check">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" data-modal="tradein">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на Trade-in</p>
+        <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер. </p>
+        <form method="POST" class="tradein__form">
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="name">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="phone">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email">
+                <label for="" name="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="check1">
+                <label for="check1">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" data-modal="installment">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на рассрочку</p>
+        <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
+        <form method="POST" class="installment__form">
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="name">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="phone">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email">
+                <label for="" name="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="check2">
+                <label for="check2">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" data-modal="mortgage">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на ипотеку</p>
+        <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
+        <form method="POST" class="mortgage__form">
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="name">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="phone">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email">
+                <label for="" name="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="check3">
+                <label for="check3">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" data-modal="more">
+        <div class="modal__close"></div>
+        <p class="modal__title">Остались вопросы?</p>
+        <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
+        <form method="POST" class="more__form">
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="name">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="phone">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email">
+                <label for="" name="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="check4">
+                <label for="check4">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" data-modal="price">
+        <div class="modal__close"></div>
+        <p class="modal__title">Получить прайс</p>
+        <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
+        <form method="POST" class="price__form">
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="name">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="phone">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email">
+                <label for="" name="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="check5">
+                <label for="check5">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Получить</button>
+        </form>
+    </div>
+
+    <div class="modal" data-modal="call">
+        <div class="modal__close"></div>
+        <p class="modal__title">Подобрать квартиру</p>
+        <p>Для получения актуальной информации по квартирам <br>
+                в жилом доме «Дядя Стёпа» укажите ваши контактные <br>
+                данные.</p>
+        <form method="POST" class="call__form">
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="name">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text">
+                <label for="" name="phone">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email">
+                <label for="" name="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="check5">
+                <label for="check5">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Получить</button>
+        </form>
+    </div>
+
+    <div class="modal" data-modal="apartments1">
+        <div class="modal__close"></div>
+        <div>
+            <p class="modal__title">Однокомнатные квартиры</p>
+            <p>Площадь квартир <span>от 21,58 до 36,32 м2</span></p>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/11.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/12.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/13.svg')"></div>
+                </div>
+                <div class="modal-next swiper-button-next"></div>
+                <div class="modal-prev swiper-button-prev"></div>
+            </div>
+            <p>Стоимость - <a href="javascript:void(0)">по запросу</a></p>
+        </div>
+        <div>
+            <p class="modal__title">Свяжитесь со специалистом <br>
+                    по недвижимости</p>
+
+            <div class="specialist">
+                <img src="img/specialist.png" alt="">
+                <div>
+                    <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
+                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                </div>
+            </div>
+            <form method="POST" class="apartments__form">
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="phone">Телефон</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="check6">
+                    <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
+                </div>
+                <button class="btn btn-yellow" type="submit">Перезвоните мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="apartments2">
+        <div class="modal__close"></div>
+        <div>
+            <p class="modal__title">Двухкомнатные квартиры</p>
+            <p>Площадь квартир <span>от 40,55 до 50,33 м2</span></p>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/21.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/22.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/23.svg')"></div>
+                </div>
+                <div class="modal-next swiper-button-next"></div>
+                <div class="modal-prev swiper-button-prev"></div>
+            </div>
+            <p>Стоимость - <a href="javascript:void(0)">по запросу</a></p>
+        </div>
+        <div>
+            <p class="modal__title">Свяжитесь со специалистом <br>
+                    по недвижимости</p>
+
+            <div class="specialist">
+                <img src="img/specialist.png" alt="">
+                <div>
+                    <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
+                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                </div>
+            </div>
+            <form method="POST" class="apartments__form">
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="phone">Телефон</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="check6">
+                    <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
+                </div>
+                <button class="btn btn-yellow" type="submit">Перезвоните мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="apartments3">
+        <div class="modal__close"></div>
+        <div>
+            <p class="modal__title">Трехкомнатные квартиры</p>
+            <p>Площадь квартир <span>от 54,45 до 60,32 м2</span></p>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/31.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/32.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/33.svg')"></div>
+                </div>
+                <div class="modal-next swiper-button-next"></div>
+                <div class="modal-prev swiper-button-prev"></div>
+            </div>
+            <p>Стоимость - <a href="javascript:void(0)">по запросу</a></p>
+        </div>
+        <div>
+            <p class="modal__title">Свяжитесь со специалистом <br>
+                    по недвижимости</p>
+
+            <div class="specialist">
+                <img src="img/specialist.png" alt="">
+                <div>
+                    <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
+                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                </div>
+            </div>
+            <form method="POST" class="apartments__form">
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="phone">Телефон</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="check6">
+                    <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
+                </div>
+                <button class="btn btn-yellow" type="submit">Перезвоните мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="apartmentss">
+        <div class="modal__close"></div>
+        <div>
+            <p class="modal__title">Студии</p>
+            <p>Площадь квартир <span>от 20,75 до 25,40 м2</span></p>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/s1.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/s2.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/s3.svg')"></div>
+                </div>
+                <div class="modal-next swiper-button-next"></div>
+                <div class="modal-prev swiper-button-prev"></div>
+            </div>
+            <p>Стоимость - <a href="javascript:void(0)">по запросу</a></p>
+        </div>
+        <div>
+            <p class="modal__title">Свяжитесь со специалистом <br>
+                    по недвижимости</p>
+
+            <div class="specialist">
+                <img src="img/specialist.png" alt="">
+                <div>
+                    <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
+                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                </div>
+            </div>
+            <form method="POST" class="apartments__form">
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="phone">Телефон</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="check6">
+                    <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
+                </div>
+                <button class="btn btn-yellow" type="submit">Перезвоните мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="apartmentse2">
+        <div class="modal__close"></div>
+        <div>
+            <p class="modal__title">Евродвушка</p>
+            <p>Площадь квартир <span>от 39,59 до 40,05 м2</span></p>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/e21.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/e22.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/e23.svg')"></div>
+                </div>
+                <div class="modal-next swiper-button-next"></div>
+                <div class="modal-prev swiper-button-prev"></div>
+            </div>
+            <p>Стоимость - <a href="javascript:void(0)">по запросу</a></p>
+        </div>
+        <div>
+            <p class="modal__title">Свяжитесь со специалистом <br>
+                    по недвижимости</p>
+
+            <div class="specialist">
+                <img src="img/specialist.png" alt="">
+                <div>
+                    <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
+                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                </div>
+            </div>
+            <form method="POST" class="apartments__form">
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="phone">Телефон</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="check6">
+                    <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
+                </div>
+                <button class="btn btn-yellow" type="submit">Перезвоните мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="apartmentse3">
+        <div class="modal__close"></div>
+        <div>
+            <p class="modal__title">Евротрёшка</p>
+            <p>Площадь квартир <span>от 53,40 до 54,45 м2</span></p>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/e31.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/e32.svg')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/e33.svg')"></div>
+                </div>
+                <div class="modal-next swiper-button-next"></div>
+                <div class="modal-prev swiper-button-prev"></div>
+            </div>
+            <p>Стоимость - <a href="javascript:void(0)">по запросу</a></p>
+        </div>
+        <div>
+            <p class="modal__title">Свяжитесь со специалистом <br>
+                    по недвижимости</p>
+
+            <div class="specialist">
+                <img src="img/specialist.png" alt="">
+                <div>
+                    <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
+                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                </div>
+            </div>
+            <form method="POST" class="apartments__form">
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="name">Ваше имя</label>
+                </div>
+                <div class="form-group">
+                    <input type="text">
+                    <label for="" name="phone">Телефон</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="check6">
+                    <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
+                </div>
+                <button class="btn btn-yellow" type="submit">Перезвоните мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" data-modal="policy">
+        <div class="modal__close"></div>
+        <p class="modal__title">Политика ООО «Оникс» в отношении <br>
+            обработки персональных данных</p>
+        <p><strong>1. ОБЩИЕ ПОЛОЖЕНИЯ</strong><br><br>
+
+                Политика обработки персональных данных (далее – Политика) разработана в соответствии с Федеральным законом от 27.07.2006. №152-ФЗ «О персональных данных» (далее – ФЗ-152). Настоящая Политика определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных в ООО «Оникс» (далее – Оператор, Общество) с целью защиты прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.<br><br>
+                
+                В Политике используются следующие основные понятия:<br><br>
+                
+                <ul>
+                    <li>автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</li>
+                    <li>блокирование персональных данных — временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</li>
+                    <li>информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств; обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному субъекту персональных данных; обработка персональных данных — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</li>
+                    <li>оператор — государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными; персональные данные – любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</li>
+                    <li>предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</li>
+                    <li>распространение (публикация) персональных данных — действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно- телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;</li>
+                    <li>уничтожение персональных данных — действия, в результате которых невозможно восстановить содержание персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных; Общество обязано опубликовать или иным образом обеспечить неограниченный доступ к настоящей Политике обработки персональных данных в соответствии с ч. 2 ст. 18.1. ФЗ-152.</li>
+                </ul><br><br>
+                
+                <strong>2. ПРИНЦИПЫ И УСЛОВИЯ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</strong><br><br>
+                
+                2.1. Обработка персональных данных у Оператора осуществляется на основе следующих принципов:<br><br>
+                
+                <ul>
+                    <li>законности и справедливой основы;</li>
+                    <li>ограничения обработки персональных данных достижением конкретных, заранее определенных и законных целей;</li>
+                    <li>недопущения обработки персональных данных, несовместимой с целями сбора персональных данных;</li>
+                    <li>недопущения объединения баз данных, содержащих персональные данные, обработка которых осуществляется в целях, несовместимых между собой;</li>
+                    <li>обработки только тех персональных данных, которые отвечают целям их обработки;</li>
+                    <li>соответствия содержания и объема обрабатываемых персональных данных заявленным целям обработки;</li>
+                    <li>недопущения обработки персональных данных, избыточных по отношению к заявленным целям их обработки;</li>
+                    <li>обеспечения точности, достаточности и актуальности персональных данных по отношению к целям обработки персональных данных;</li>
+                    <li>уничтожения либо обезличивания персональных данных по достижении целей их обработки или в случае утраты необходимости в достижении этих целей, при невозможности устранения Оператором допущенных нарушений персональных данных, если иное не предусмотрено федеральным законом.</li>
+                </ul><br><br>
+
+                2.2. Условия обработки персональных данных:<br><br>
+                
+                Оператор производит обработку персональных данных при наличии хотя бы одного из следующих условий:<br><br>
+                
+                <ul>
+                    <li>обработка персональных данных осуществляется с согласия субъекта персональных данных на обработку его персональных данных;</li>
+                    <li>обработка персональных данных необходима для достижения целей, предусмотренных международным договором Российской Федерации или законом, для осуществления и выполнения возложенных законодательством Российской Федерации на оператора функций, полномочий и обязанностей;</li>
+                    <li>обработка персональных данных необходима для осуществления правосудия, исполнения судебного акта, акта другого органа или должностного лица, подлежащих исполнению в соответствии с законодательством Российской Федерации об исполнительном производстве;</li>
+                    <li>обработка персональных данных необходима для исполнения договора, стороной которого либо выгодоприобретателем или поручителем по которому является субъект персональных данных, а также для заключения договора по инициативе субъекта персональных данных или договора, по которому субъект персональных данных будет являться выгодоприобретателем или поручителем;</li>
+                    <li>обработка персональных данных необходима для осуществления прав и законных интересов оператора или третьих лиц либо для достижения общественно значимых целей при условии, что при этом не нарушаются права и свободы субъекта персональных данных; — осуществляется обработка персональных данных, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных либо по его просьбе (далее — общедоступные персональные данные);</li>
+                    <li>осуществляется обработка персональных данных, подлежащих опубликованию или обязательному раскрытию в соответствии с федеральным законом.</li>
+                </ul><br><br>
+                2.3. Конфиденциальность персональных данных.<br><br>
+                
+                Оператор и иные лица, получившие доступ к персональным данным, обязаны не раскрывать третьим лицам и не распространять персональные данные без согласия субъекта персональных данных, если иное не предусмотрено федеральным законом.<br><br>
+                
+                2.4.Общедоступные источники персональных данных.<br><br>
+                
+                В целях информационного обеспечения у Оператора могут создаваться общедоступные источники персональных данных субъектов, в том числе справочники и адресные книги. В общедоступные источники персональных данных с письменного согласия субъекта могут включаться его фамилия, имя, отчество, дата и место рождения, должность, номера контактных телефонов, адрес электронной почты и иные персональные данные, сообщаемые субъектом персональных данных. Сведения о субъекте должны быть в любое время исключены из общедоступных источников персональных данных по требованию субъекта, либо по решению суда или иных уполномоченных государственных органов.<br><br>
+                
+                2.5 Специальные категории персональных данных.<br><br>
+                
+                Обработка Оператором специальных категорий персональных данных, касающихся расовой, национальной принадлежности, политических взглядов, религиозных или философских убеждений, состояния здоровья, интимной жизни, допускается в случаях, если:<br><br>
+                
+                <ul>
+                    <li>субъект персональных данных дал согласие в письменной форме на обработку своих персональных данных;</li>
+                    <li>персональные данные сделаны общедоступными субъектом персональных данных;</li>
+                    <li>обработка персональных данных осуществляется в соответствии с законодательством о государственной социальной помощи, трудовым законодательством, законодательством Российской Федерации о пенсиях по государственному пенсионному обеспечению, о трудовых пенсиях;</li>
+                    <li>обработка персональных данных необходима для защиты жизни, здоровья или иных жизненно важных интересов субъекта персональных данных либо жизни, здоровья или иных жизненно важных интересов других лиц и получение согласия субъекта персональных данных невозможно;</li>
+                    <li>обработка персональных данных осуществляется в медико-профилактических целях, в целях установления медицинского диагноза, оказания медицинских и медико- социальных услуг при условии, что обработка персональных данных осуществляется лицом, профессионально занимающимся медицинской деятельностью и обязанным в соответствии с законодательством Российской Федерации сохранять врачебную тайну;</li>
+                    <li>обработка персональных данных необходима для установления или осуществления прав субъекта персональных данных или третьих лиц, а равно и в связи с осуществлением правосудия; — обработка персональных данных осуществляется в соответствии с законодательством об обязательных видах страхования, со страховым законодательством.</li>
+                </ul>
+
+                Обработка специальных категорий персональных данных должна быть незамедлительно прекращена, если устранены причины, вследствие которых осуществлялась их обработка, если иное не установлено федеральным законом. Обработка персональных данных о судимости может осуществляться Оператором исключительно в случаях и в порядке, которые определяются в соответствии с федеральными законами.<br><br>
+                
+                2.6. Поручение обработки персональных данных другому лицу.<br><br>
+                
+                Оператор вправе поручить обработку персональных данных другому лицу с согласия субъекта персональных данных, если иное не предусмотрено федеральным законом, на основании заключаемого с этим лицом договора. Лицо, осуществляющее обработку персональных данных по поручению Оператора, обязано соблюдать принципы и правила обработки персональных данных, предусмотренные ФЗ-152.<br><br>
+                
+                2.7. Трансграничная передача персональных данных Оператором не осуществляется.<br><br>
+                
+                
+                <strong>3. ПРАВА СУБЪЕКТА ПЕРСОНАЛЬНЫХ ДАННЫХ</strong> <br><br>
+                
+                3.1. Согласие субъекта персональных данных на обработку его персональных данных<br><br>
+                
+                Субъект персональных данных принимает решение о предоставлении его персональных данных и дает согласие на их обработку свободно, своей волей и в своем интересе. Согласие на обработку персональных данных может быть дано субъектом персональных данных или его представителем в любой позволяющей подтвердить факт его получения форме, если иное не установлено федеральным законом. Обязанность предоставить доказательство получения согласия субъекта персональных данных на обработку его персональных данных или доказательство наличия оснований, указанных в ФЗ-152, возлагается на Оператора.<br><br>
+                
+                3.2. Права субъекта персональных данных Субъект персональных данных имеет право на получение у Оператора информации, касающейся обработки его персональных данных, если такое право не ограничено в соответствии с федеральными законами. Субъект персональных данных вправе требовать от Оператора уточнения его персональных данных, их блокирования или уничтожения в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав. Обработка персональных данных в целях продвижения товаров, работ, услуг на рынке путем осуществления прямых контактов с потенциальным потребителем с помощью средств связи допускается только при условии предварительного согласия субъекта персональных данных.<br><br>
+                
+                Указанная обработка персональных данных признается осуществляемой без предварительного согласия субъекта персональных данных, если Общество не докажет, что такое согласие было получено. Оператор обязан немедленно прекратить по требованию субъекта персональных данных обработку его персональных данных в вышеуказанных целях.<br><br>
+                
+                Запрещается принятие на основании исключительно автоматизированной обработки персональных данных решений, порождающих юридические последствия в отношении субъекта персональных данных или иным образом затрагивающих его права и законные интересы, за исключением случаев, предусмотренных федеральными законами, или при наличии согласия в письменной форме субъекта персональных данных.<br><br>
+                
+                Если субъект персональных данных считает, что Оператор осуществляет обработку его персональных данных с нарушением требований ФЗ-152 или иным образом нарушает его права и свободы, субъект персональных данных вправе обжаловать действия или бездействие Оператора в Уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке.<br><br>
+                
+                Субъект персональных данных имеет право на защиту своих прав и законных интересов, в том числе на возмещение убытков и (или) компенсацию морального вреда в судебном порядке.<br><br>
+                
+                
+                <strong>4. ОБЕСПЕЧЕНИЕ БЕЗОПАСНОСТИ ПЕРСОНАЛЬНЫХ ДАННЫХ</strong> <br><br>
+                
+                Безопасность персональных данных, обрабатываемых Оператором, обеспечивается реализацией правовых, организационных и технических мер, необходимых для обеспечения требований федерального законодательства в области защиты персональных данных.<br><br>
+                
+                Для предотвращения несанкционированного доступа к персональным данным Оператором применяются следующие организационно-технические меры:<br><br>
+                
+                <ul>
+                    <li>назначение должностных лиц, ответственных за организацию обработки и защиты персональных данных;</li>
+                    <li>ограничение состава лиц, имеющих доступ к персональным данным;</li>
+                    <li>ознакомление субъектов с требованиями федерального законодательства и нормативных документов Оператора по обработке и защите персональных данных;</li>
+                    <li>организация пропускного режима на территорию Оператора.</p></li>
+                </ul>
+    </div>
+
+</div>
+
+<!-- END CONTENT  -->
+//= template/footer.html
