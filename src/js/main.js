@@ -133,6 +133,16 @@ let july19 = new Swiper('.company .july19', {
     },
 });
 
+let marth19 = new Swiper('.company .marth19', {
+    loop: true,
+    effect: 'fade',
+    simulateTouch: false,
+    navigation: {
+        nextEl: '.company-next',
+        prevEl: '.company-prev'
+    },
+});
+
 let modalApartments = new Swiper('.modal .swiper-container', {
     loop: true,
     navigation: {
@@ -213,6 +223,13 @@ $('body').on('click', '.modal__close', (e) => {
     $('.modal').removeClass('active');
 });
 
+$('body').on('click', '.modals', (e) => {
+    if ($(e.target).is('.modals')) {
+        $('.modals').removeClass('active');
+        $('.modal').removeClass('active');
+    }
+});
+
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [58.036736, 56.025610],
@@ -278,21 +295,7 @@ $(window).on('load', () => {
     $('html').removeClass('loading');
 });
 
-$('body').on('submit', '.questions__form', (e) => {
-    e.preventDefault();
-    
-    var form_data = $(this).serialize(); //собераем все данные из формы
-    $.ajax({
-    type: 'POST', //Метод отправки
-    url: 'form.php', //путь до php фаила отправителя
-    data: form_data,
-        success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
-            alert('все ок'); // пoкaжeм eё тeкст
-        }
-    });
-});
-
-$('.ways').height($('.ways').height());
+$('.ways').height($('.ways').height() + 40);
 
 $('.modal').hide();
 
@@ -308,4 +311,22 @@ $("a[data-scroll]").click((e) => {
     $([document.documentElement, document.body]).animate({
         scrollTop: $('section[data-scroll="' + $(e.currentTarget).attr('data-scroll') + '"]').offset().top
     }, 2000);
+});
+
+$('body').on('submit', 'form', (e) => {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "../form.php",
+        data: $(e.currentTarget).serialize(),
+        success: () => {
+            $(e.currentTarget).find('.form-group').fadeOut();
+            $(e.currentTarget).find('input').fadeOut();
+            $(e.currentTarget).find('.btn').text('Заявка отправлена').css('background', '#ff6c00');
+        }					
+    });
+});
+
+$('body').on('click', '.documents__toggle', (e) => {
+    $(e.currentTarget).next().slideToggle();
 });

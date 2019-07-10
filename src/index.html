@@ -56,7 +56,15 @@
 
         <div class="main__info">
             <a href="javascript:void(0)" data-modal="more" class="btn btn-yellow">ЭСКРОУ-СЧЕТА</a>
-            <h2 class="main__title">Из районных великанов <br> <span class="t2">Самый главный</span> <br> <span class="t3">великан!</span></h2>
+            <div class="text swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><h2 class="main__title">Из районных великанов <br> <span class="t2">Самый главный</span> <br> <span class="t3">великан!</span></h2></div>
+                    <div class="swiper-slide"><h2 class="main__title">Это просто загляденье — <br> <span class="t2">Чудо-двор <br> у «Дяди Стёпы»!</span></h2></div>
+                    <div class="swiper-slide"><h2 class="main__title">Знал в районе весь народ, <br> на Буксироной, 10<br> <span class="t2">«Дядя Стёпа» <br> дом растёт!</span></h2></div>
+                    <div class="swiper-slide"><h2 class="main__title">Узнавали «Дядю Стёпу» <br> за такую высоту, <br> <span class="t2">каму видно <br> за версту!</span></h2></div>
+                </div>
+            </div>
+            
             <p class="main__addr">ул. Буксирная, 10 <br> <span>(м/р Водники)</span></p>
             <a href="javascript:void(0)" class="main__btn btn" data-modal="call">Подобрать квартиру</a>
 
@@ -68,7 +76,7 @@
         </div>        
     </div>
 
-    <div class="swiper-container">
+    <div class="photo swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('img/main1.jpg')"></div>
             <div class="swiper-slide" style="background-image: url('img/main2.jpg')"></div>
@@ -76,38 +84,39 @@
             <div class="swiper-slide" style="background-image: url('img/main4.jpg')"></div>
         </div>
         <div class="main-pag swiper-pagination"></div>
-    </div>
-
-    <img src="img/call.svg" width="80" alt="" class="call">
-    <div class="callme">
-        <div class="callme__close"></div>
-        <div class="callme__content">
-            <p class="callme__title">Здравствуйте. Хотите, <br> чтобы мы перезвоним вам?</p>
-            <p>Оставьте свои контакты и через 5 минут <br> с вами свяжется наш менеджер. </p>
-            <form class="callme__form" method="POST" action="">
-                <div class="form-group">
-                    <input type="text">
-                    <label for="" name="name">Ваше имя</label>
-                </div>
-                <div class="form-group">
-                    <input type="text">
-                    <label for="" name="phone">Телефон</label>
-                </div>
-                <button class="btn btn-blue" type="submit">Позвоните мне!</button>
-            </form>
-            <span>Нажимая на кнопку «Позвоните мне», я даю <br>
-                    своё согласие на обработку моих <br>
-                    персональных данных и <a href="javascript:void(0)" data-modal="policy">принимаю условия <br>
-                        соглашения</a></span>
-        </div>
-    </div>
+    </div>    
 </section>
+
+<img src="img/call.svg" width="80" alt="" class="call">
+<div class="callme">
+    <div class="callme__close"></div>
+    <div class="callme__content">
+        <p class="callme__title">Здравствуйте. Хотите, <br> чтобы мы перезвоним вам?</p>
+        <p>Оставьте свои контакты и через 5 минут <br> с вами свяжется наш менеджер. </p>
+        <form class="callme__form" method="POST" action="form.php">
+            <div class="form-group">
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
+            </div>
+            <input type="hidden" name="hide" value="callme">
+            <button class="btn btn-blue" type="submit">Позвоните мне!</button>
+        </form>
+        <span>Нажимая на кнопку «Позвоните мне», я даю <br>
+                своё согласие на обработку моих <br>
+                персональных данных и <a href="javascript:void(0)" data-modal="policy">принимаю условия <br>
+                    соглашения</a></span>
+    </div>
+</div>
 
 <section class="start">
     <div class="container">
         <h3 class="start__title">старт <br> <span>продаж!</span></h3>
         <div class="start__count">
-            <span class="start__num">1,1</span>
+            <span class="start__num">1</span>
             <div class="start__rub">
                 <span>млн</span>
                 <span>рублей</span>
@@ -121,15 +130,27 @@
     <div class="container">
         <div class="swiper-container">
             <div class="swiper-wrapper">
+                
                 <div class="swiper-slide">
-                    <div style="background-image: url('img/f1.jpg')" class="features__img"></div>
+                    <div style="background-image: url('img/f5.jpg')" class="features__img"></div>
                     <div class="features__info">
                         <div>
-                            <p class="features__title">без колясок <br> и велосипедов <br> в квартире</p>
-                            <p class="features__text">Еще больше удобств для мам и велосепедистов,
-                                коляски и велосипеды могут храниться в
-                                специальном помещении в цокольном этаже
-                                дома.</p>
+                            <p class="features__title">Автономная <br> котельная</p>
+                            <p class="features__text">Автономная газовая котельная, отапливающая 
+                                один дом, а не тысячи. Если в квартирах 
+                                становится слишком жарко, можно легко 
+                                уменьшить расход топлива, а в морозные дни – 
+                                увеличить. Благодаря этому температура в 
+                                помещениях всегда будет оптимальной, 
+                                устраивающей каждого из обитателей. Не 
+                                придется проветривать помещения, снижая 
+                                температуру и вместе с тем выпуская на улицу 
+                                тепло, за которое заплачены немалые деньги. 
+                                Но в то же время не придется пользоваться 
+                                дополнительными источниками тепла 
+                                (электрическими нагревателями), чтобы 
+                                поддерживать достаточно высокую температуру в 
+                                квартире.</p>
                         </div>
                         <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
                     </div>
@@ -173,25 +194,14 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="background-image: url('img/f5.jpg')" class="features__img"></div>
+                    <div style="background-image: url('img/f1.jpg')" class="features__img"></div>
                     <div class="features__info">
                         <div>
-                            <p class="features__title">Автономная <br> котельная</p>
-                            <p class="features__text">Автономная газова котельная, отапливающая 
-                                один дом, а не тысячи. Если в квартирах 
-                                становится слишком жарко, можно легко 
-                                уменьшить расход топлива, а в морозные дни – 
-                                увеличить. Благодаря этому температура в 
-                                помещениях всегда будет оптимальной, 
-                                устраивающей каждого из обитателей. Не 
-                                придется проветривать помещения, снижая 
-                                температуру и вместе с тем выпуская на улицу 
-                                тепло, за которое заплачены немалые деньги. 
-                                Но в то же время не придется пользоваться 
-                                дополнительными источниками тепла 
-                                (электрическими нагревателями), чтобы 
-                                поддерживать достаточно высокую температуру в 
-                                квартире.</p>
+                            <p class="features__title">без колясок <br> и велосипедов  в квартире</p>
+                            <p class="features__text">Еще больше удобств для мам и велосипедистов, 
+                                коляски и велосипеды могут храниться в 
+                                специальном помещении в цокольном этаже 
+                                дома.</p>
                         </div>
                         <a href="javascript:void(0)" class="features__btn btn btn-blue" data-modal="more">Узнать подробнее</a>
                     </div>
@@ -362,12 +372,12 @@
         <p>Вы приобретаете квартиру с отделкой, и тогда, всё, что вам останется сделать – это завезти
             мебель и свои личные вещи. Вам не придется тратить время и силы на ремонт, и вы сэкономите на отделочных 
             материалах, так как мы закупаем их оптом.</p>
-        <p><strong>Мы покупаем материалы у проверенных поставщиков и даем гарантию на наши отделочные работы 5 лет!</strong></p>
+        <p><strong>Мы покупаем материалы у проверенных поставщиков.</strong></p>
 
         <div class="rooms__block">
             <div class="rooms__item">
                 <img class="rooms__img" src="img/room1.jpg" alt="">
-                <p class="rooms__title">Чистовая</p>
+                <p class="rooms__title">Предчистовая</p>
                 <ul>
                     <li>разводка электрики с установкой <br> электрофурнитуры</li>
                     <li>разводка труб до квартиры без разводки по <br> помещениям квартиры</li>
@@ -382,7 +392,7 @@
             </div>
             <div class="rooms__item">
                 <img class="rooms__img" src="img/room2.jpg" alt="">
-                <p class="rooms__title">Комфорт</p>
+                <p class="rooms__title">Чистовая</p>
                 <ul>
                     <li>межкомнатные двери</li>
                     <li>обои</li>
@@ -397,13 +407,20 @@
             </div>
             <div class="rooms__item">
                 <img class="rooms__img" src="img/room3.jpg" alt="">
-                <p class="rooms__title">Комфорт+</p>
+                <p class="rooms__title">Комфорт</p>
                 <ul>
                     <li>ламинат на полу</li>
                     <li>в санузле полностью плитка от пола до <br> потолка</li>
                     <li>скрытая разводка труб в санузле</li>
                     <li>плитка на полу балкона</li>
                     <li>зеркало над раковиной в санузле</li>
+                    <li>межкомнатные двери</li>
+                    <li>обои</li>
+                    <li>раковина</li>
+                    <li>унитаз</li>
+                    <li>белая стальная ванна или поддон</li>
+                    <li>сантехника</li>
+                    <li>на кухне мойка</li>
                 </ul>
             </div>
         </div>
@@ -419,19 +436,19 @@
                 <div class="swiper-slide">
                     <div class="apartments__item">
                         <p class="apartments__title">1-комнатные <br>
-                                <span>от 21,58 до 36,32 м2</span></p>
+                                <span>от 34,52 до 36,32 м2</span></p>
                         <img src="img/1.svg" alt="" class="apartments__img">
                         <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartments1">Узнать подробнее</a>
                     </div>
                     <div class="apartments__item">
                         <p class="apartments__title">2-комнатные <br>
-                                <span>от 40,55 до 50,53 м2</span></p>
+                                <span>от 48,69 до 50,54 м2</span></p>
                         <img src="img/2.svg" alt="" class="apartments__img">
                         <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartments2">Узнать подробнее</a>
                     </div>
                     <div class="apartments__item">
                         <p class="apartments__title">3-комнатные <br>
-                                <span>от 54,45 до 60,32 м2</span></p>
+                                <span>от 59,12 до 60,32 м2</span></p>
                         <img src="img/3.svg" alt="" class="apartments__img">
                         <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartments3">Узнать подробнее</a>
                     </div>
@@ -445,7 +462,7 @@
                     </div>
                     <div class="apartments__item">
                         <p class="apartments__title">евродвушка<br>
-                                <span>от 39,59 до 41,05 м2</span></p>
+                                <span>от 39,59 до 40,55 м2</span></p>
                         <img src="img/5.svg" alt="" class="apartments__img">
                         <a href="javascript:void(0)" class="apartments__btn btn btn-blue"data-modal="apartmentse2">Узнать подробнее</a>
                     </div>
@@ -470,9 +487,10 @@
     <div class="container">
         <h2>Остались вопросы? <br>
             <span>Оставьте заявку и получите подборку планировок с ценами</span></h2>
-        <form class="questions__form" method="POST">
+        <form class="questions__form" action="form.php" method="POST">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="email" name="email" placeholder="Ваш e-mail">
+            <input type="hidden" name="hide" value="questions">
             <button class="btn btn-yellow" type="submit">Оставить заявку</button>
         </form>
         <p class="questions__desc">Нажимая кнопку «Оставить заявку», <a href="javascript:void(0)" data-modal="policy">Вы соглашаетесь с условиями обработки и хранения персональных данных</a></p>
@@ -494,6 +512,8 @@
             <div class="swiper-slide" style="background-image: url('img/91.jpg')"></div>
             <div class="swiper-slide" style="background-image: url('img/92.jpg')"></div>
             <div class="swiper-slide" style="background-image: url('img/93.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/94.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/95.jpg')"></div>
         </div>
     </div>
 
@@ -502,6 +522,8 @@
             <div class="swiper-slide" style="background-image: url('img/151.jpg')"></div>
             <div class="swiper-slide" style="background-image: url('img/152.jpg')"></div>
             <div class="swiper-slide" style="background-image: url('img/153.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/154.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/155.jpg')"></div>
         </div>
     </div>
 
@@ -509,6 +531,9 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('img/251.jpg')"></div>
             <div class="swiper-slide" style="background-image: url('img/252.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/253.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/254.jpg')"></div>
+            <div class="swiper-slide" style="background-image: url('img/255.jpg')"></div>
         </div>        
     </div>
 
@@ -673,9 +698,10 @@
 <section class="questions orange" data-scroll="questions">
     <div class="container">
         <h2><span>эскроу-счета. Одобрено!</span></h2>
-        <form class="questions__form" method="POST">
+        <form class="questions__form" action="form.php" method="POST">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="email" name="email" placeholder="Ваш e-mail">
+            <input type="hidden" name="hide" value="ex">
             <button class="btn btn-yellow" type="submit">Узнать подробности</button>
         </form>
         <p class="questions__desc">Нажимая кнопку «Оставить заявку», <a href="javascript:void(0)" data-modal="policy">Вы соглашаетесь с условиями обработки и хранения персональных данных</a></p>
@@ -702,17 +728,69 @@
             <div class="company__documents">
                 <div class="company__title">Документация</div>
                 <div class="company__forms">
-                    <form action="">
-                        <select name="" id="">
-                            <option value="">Информация об объекте строительства</option>
-                            <option value="">Информация об объекте строительства</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">Информация о застройщике</option>
-                            <option value="">Информация о застройщике</option>
-                        </select>
-                    </form>
-                    <a href="javascript:void(0)" class="company__policy">Политика группы компаний «Оникс» в отношении обработки персональных данных</a>
+                    <div class="documents">
+                        <div class="documents__item">
+                            <p class="documents__toggle">Информация об объекте строительства</p>
+
+                            <nav class="documents__body">
+                                <a href="docs/Выписка из ЕГРН на земельный участок от 27.06.19.pdf" target="_blank">
+                                    <span class="name">Выписка из ЕГРН на земельный участок от 27.06.19</span>
+                                    <span class="size">PDF, 2,6 Мб</span>
+                                </a>
+
+                                <a href="docs/Договор ДУ квартира (типовой).pdf" target="_blank">
+                                    <span class="name">Договор ДУ квартира (типовой)</span>
+                                    <span class="size">PDF, 0,2 Мб</span>
+                                </a>
+
+                                <a href="docs/Заключение о соответствии Застройщика и проектной декларации г. Пермь, ул. Буксирная, 10.pdf" target="_blank">
+                                    <span class="name">Заключение о соответствии Застройщика и проектной декларации г. Пермь, ул. Буксирная, 10</span>
+                                    <span class="size">PDF, 1,5 Мб</span>
+                                </a>
+
+                                <a href="docs/Извещение о начале строительства.pdf" target="_blank">
+                                    <span class="name">Извещение о начале строительства</span>
+                                    <span class="size">PDF, 1,7 Мб</span>
+                                </a>
+
+                                <a href="docs/Положительное заключение экспертизы.pdf" target="_blank">
+                                    <span class="name">Положительное заключение экспертизы</span>
+                                    <span class="size">PDF, 19,9 Мб</span>
+                                </a>
+
+                                <a href="docs/Проектная декларация от 01.07.2019.pdf" target="_blank">
+                                    <span class="name">Проектная декларация от 01.07.2019</span>
+                                    <span class="size">PDF, 0,2 Мб</span>
+                                </a>
+
+                                <a href="docs/Проектная декларация от 04.07.2019.pdf" target="_blank">
+                                    <span class="name">Проектная декларация от 04.07.2019</span>
+                                    <span class="size">PDF, 0,2 Мб</span>
+                                </a>
+
+                                <a href="docs/Проектная декларация от 10.07.2019.pdf" target="_blank">
+                                    <span class="name">Проектная декларация от 10.07.2019</span>
+                                    <span class="size">PDF, 0,2 Мб</span>
+                                </a>
+
+                                <a href="docs/Проектная декларация от 20.06.2019.pdf" target="_blank">
+                                    <span class="name">Проектная декларация от 20.06.2019</span>
+                                    <span class="size">PDF, 0,2 Мб</span>
+                                </a>
+
+                                <a href="docs/Проектная декларация от 22.04.2019.pdf" target="_blank">
+                                    <span class="name">Проектная декларация от 22.04.2019</span>
+                                    <span class="size">PDF, 0,2 Мб</span>
+                                </a>
+
+                                <a href="docs/Разрешение на строительство.pdf" target="_blank">
+                                    <span class="name">Разрешение на строительство</span>
+                                    <span class="size">PDF, 1,3 Мб</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="company__policy" data-modal="policy">Политика группы компаний «Оникс» в отношении обработки персональных данных</a>
                 </div>
             </div>
         </div>
@@ -724,45 +802,63 @@
             </nav>
             <div class="active company__tab" data-tab="2019">
                 <nav class="company__nav company__nav-sub">
+                    <a href="javascript:void(0)" data-tab="19marth">Март</a>
                     <a href="javascript:void(0)" data-tab="19april">Апрель</a>
                     <a href="javascript:void(0)" data-tab="19may">Май</a>
-                    <a href="javascript:void(0)" class="active" data-tab="19june">Июнь</a>
-                    <a href="javascript:void(0)" data-tab="19july">Июль</a>
+                    <a href="javascript:void(0)" data-tab="19june">Июнь</a>
+                    <a href="javascript:void(0)" class="active" data-tab="19july">Июль</a>
                     <a href="javascript:void(0)" disable data-tab="19august">Август</a>
                     <a href="javascript:void(0)" disable data-tab="19september">Сентябрь</a>
                     <a href="javascript:void(0)" disable data-tab="19october">Октябрь</a>
                     <a href="javascript:void(0)" disable data-tab="19noveber">Ноябрь</a>
                     <a href="javascript:void(0)" disable data-tab="19december">Декабрь</a>
                 </nav>
+                <div class="company__tab" data-tab="19marth">
+                    <div class="marth19 swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image: url('img/IMG-b7154c6caa556c6c64a32c67f4ab26b8-V.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG-bfcf2e289b73493f05581e0eafa33abd-V.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="company__tab" data-tab="19april">
                     <div class="april19 swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190411_093724.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190415_094236.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190415_094422.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190422_093857.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190422_094153.jpg')"></div>
                         </div>
                     </div>
                 </div>
                 <div class="company__tab" data-tab="19may">
                     <div class="may19 swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190508_092629.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190508_092635.jpg')"></div>
                         </div>
                     </div>
                 </div>
-                <div class="company__tab active" data-tab="19june">
+                <div class="company__tab" data-tab="19june">
                     <div class="june19 swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190606_091410.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190611_090130.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190617_085408.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190620_072947.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190624_092226.jpg')"></div>
                         </div>
                     </div>
                 </div>
-                <div class="company__tab" data-tab="19july">
+                <div class="company__tab active" data-tab="19jly">
                     <div class="july19 swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
-                            <div class="swiper-slide" style="background-image: url('img/s1.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190703_101651.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190703_101714.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190704_094740.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190709_091658.jpg')"></div>
+                            <div class="swiper-slide" style="background-image: url('img/IMG_20190709_093844.jpg')"></div>
                         </div>
                     </div>
                 </div>
@@ -789,16 +885,20 @@
                 <p><strong>Офис продаж:</strong> <br> Пермь, ул. Николая Островского, 44а, 3 этаж <br> <a href="tel:+73422999888">тел.: +7 (342) 2-999-888</a></p>
             </div>
             <div class="footer__col">
-                <a href="mailto:info@onix.ru">e-mail.: info@onix.ru</a>
-                <a href="www.onix.info.ru" target="_blank">www.onix.info.ru</a>
+                <a href="mailto:sale@onix.info">e-mail.: sale@onix.info</a>
+                <a href="www.onix.info" target="_blank">www.onix.info</a>
             </div>
         </div>
-        <p>Застройщик вправе вносить изменения в проектную документацию до момента ввода многоквартирного дома в эксплуатацию. Изображения отделки квартир и мест общего пользования, холлов, а также 
+        <div class="flex">
+            <p>Застройщик вправе вносить изменения в проектную документацию до момента ввода многоквартирного дома в эксплуатацию. Изображения отделки квартир и мест общего пользования, холлов, а также 
                 изображения придомовой территории являются компьютерной моделью и могут отличаться от фактического исполнения, что может быть связано с искажением цветопередачи при просмотре и печати 
                 изображения и прочими факторами. Изображения отделки квартир, мест общего пользования, холлов, а также изображения придомовой территории могут содержать элементы художественного вымысла. 
                 Изображенные мебель, бытовая техника, предметы интерьера в состав и стоимость отделки не входят. Застройщик группа компаний «Оникс». Проектная декларация размещена на сайте onix.info.ru 
                 С подробной информацией о помещениях, об условиях их приобретения, об условиях акций можно ознакомиться на сайте застройщика и 
                 в офисе продаж по адресу г. Пермь, ул. Николая Островского, 44а. Предложение не является публичной офертой.</p>
+
+            <a href="http://prime59.ru/" class="developer" target="_blank"><img src="img/prime.svg" width="110" alt=""></a>
+        </div>
     </div>
     <img src="img/footer.png" alt="" class="footer__man">
 </footer>
@@ -810,19 +910,20 @@
         <div class="modal__close"></div>
         <p class="modal__title">Отправить заявку на покупку <br> с сертификатом</p>
         <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер. </p>
-        <form method="POST" class="request__form">
+        <form method="POST" action="form.php" class="request__form">
             <div class="form-group">
-                <input type="text">
-                <label for="" name="name">Ваше имя</label>
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
             </div>
             <div class="form-group">
-                <input type="text">
-                <label for="" name="phone">Телефон</label>
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
             </div>
             <div class="form-group">
-                <input type="email">
-                <label for="" name="email">Email</label>
+                <input type="email" name="email">
+                <label for="">Email</label>
             </div>
+            <input type="hidden" name="hide" value="request">
             <div class="form-group">
                 <input type="checkbox" id="check">
                 <label for="check">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
@@ -835,19 +936,20 @@
         <div class="modal__close"></div>
         <p class="modal__title">Отправить заявку на Trade-in</p>
         <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер. </p>
-        <form method="POST" class="tradein__form">
+        <form method="POST" action="form.php" class="tradein__form">
             <div class="form-group">
-                <input type="text">
-                <label for="" name="name">Ваше имя</label>
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
             </div>
             <div class="form-group">
-                <input type="text">
-                <label for="" name="phone">Телефон</label>
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
             </div>
             <div class="form-group">
-                <input type="email">
-                <label for="" name="email">Email</label>
+                <input type="email" name="email">
+                <label for="">Email</label>
             </div>
+            <input type="hidden" name="hide" value="tradein">
             <div class="form-group">
                 <input type="checkbox" id="check1">
                 <label for="check1">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
@@ -860,19 +962,20 @@
         <div class="modal__close"></div>
         <p class="modal__title">Отправить заявку на рассрочку</p>
         <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
-        <form method="POST" class="installment__form">
+        <form method="POST" action="form.php" class="installment__form">
             <div class="form-group">
-                <input type="text">
-                <label for="" name="name">Ваше имя</label>
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
             </div>
             <div class="form-group">
-                <input type="text">
-                <label for="" name="phone">Телефон</label>
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
             </div>
             <div class="form-group">
-                <input type="email">
-                <label for="" name="email">Email</label>
+                <input type="email" name="email">
+                <label for="">Email</label>
             </div>
+            <input type="hidden" name="hide" value="installment">
             <div class="form-group">
                 <input type="checkbox" id="check2">
                 <label for="check2">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
@@ -885,19 +988,20 @@
         <div class="modal__close"></div>
         <p class="modal__title">Отправить заявку на ипотеку</p>
         <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
-        <form method="POST" class="mortgage__form">
+        <form method="POST" action="form.php" class="mortgage__form">
             <div class="form-group">
-                <input type="text">
-                <label for="" name="name">Ваше имя</label>
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
             </div>
             <div class="form-group">
-                <input type="text">
-                <label for="" name="phone">Телефон</label>
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
             </div>
             <div class="form-group">
-                <input type="email">
-                <label for="" name="email">Email</label>
+                <input type="email" name="email">
+                <label for="">Email</label>
             </div>
+            <input type="hidden" name="hide" value="mortgage">
             <div class="form-group">
                 <input type="checkbox" id="check3">
                 <label for="check3">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
@@ -910,19 +1014,20 @@
         <div class="modal__close"></div>
         <p class="modal__title">Остались вопросы?</p>
         <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
-        <form method="POST" class="more__form">
+        <form method="POST" action="form.php" class="more__form">
             <div class="form-group">
-                <input type="text">
-                <label for="" name="name">Ваше имя</label>
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
             </div>
             <div class="form-group">
-                <input type="text">
-                <label for="" name="phone">Телефон</label>
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
             </div>
             <div class="form-group">
-                <input type="email">
-                <label for="" name="email">Email</label>
+                <input type="email" name="email">
+                <label for="">Email</label>
             </div>
+            <input type="hidden" name="hide" value="more">
             <div class="form-group">
                 <input type="checkbox" id="check4">
                 <label for="check4">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
@@ -935,19 +1040,20 @@
         <div class="modal__close"></div>
         <p class="modal__title">Получить прайс</p>
         <p>Оставьте свои контакты и через 5 минут  с вами свяжется наш <br> менеджер.</p>
-        <form method="POST" class="price__form">
+        <form method="POST" action="form.php" class="price__form">
             <div class="form-group">
-                <input type="text">
-                <label for="" name="name">Ваше имя</label>
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
             </div>
             <div class="form-group">
-                <input type="text">
-                <label for="" name="phone">Телефон</label>
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
             </div>
             <div class="form-group">
-                <input type="email">
-                <label for="" name="email">Email</label>
+                <input type="email" name="email">
+                <label for="">Email</label>
             </div>
+            <input type="hidden" name="hide" value="price">
             <div class="form-group">
                 <input type="checkbox" id="check5">
                 <label for="check5">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
@@ -962,19 +1068,20 @@
         <p>Для получения актуальной информации по квартирам <br>
                 в жилом доме «Дядя Стёпа» укажите ваши контактные <br>
                 данные.</p>
-        <form method="POST" class="call__form">
+        <form method="POST" action="form.php" class="call__form">
             <div class="form-group">
-                <input type="text">
-                <label for="" name="name">Ваше имя</label>
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
             </div>
             <div class="form-group">
-                <input type="text">
-                <label for="" name="phone">Телефон</label>
+                <input type="text" name="phone">
+                <label for="">Телефон</label>
             </div>
             <div class="form-group">
-                <input type="email">
-                <label for="" name="email">Email</label>
+                <input type="email" name="email">
+                <label for="">Email</label>
             </div>
+            <input type="hidden" name="hide" value="call">
             <div class="form-group">
                 <input type="checkbox" id="check5">
                 <label for="check5">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
@@ -1008,18 +1115,19 @@
                 <img src="img/specialist.png" alt="">
                 <div>
                     <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
-                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                    <a href="tel:+79124900777">+7 912-490-07-77</a>
                 </div>
             </div>
-            <form method="POST" class="apartments__form">
+            <form method="POST" action="form.php" class="apartments__form">
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="name">Ваше имя</label>
+                    <input type="text" name="name">
+                    <label for="">Ваше имя</label>
                 </div>
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="phone">Телефон</label>
+                    <input type="text" name="phone">
+                    <label for="">Телефон</label>
                 </div>
+                <input type="hidden" name="hide" value="specialist">
                 <div class="form-group">
                     <input type="checkbox" id="check6">
                     <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
@@ -1054,18 +1162,19 @@
                 <img src="img/specialist.png" alt="">
                 <div>
                     <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
-                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                    <a href="tel:+79124900777">+7 912-490-07-77</a>
                 </div>
             </div>
-            <form method="POST" class="apartments__form">
+            <form method="POST" action="form.php" class="apartments__form">
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="name">Ваше имя</label>
+                    <input type="text" name="name">
+                    <label for="">Ваше имя</label>
                 </div>
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="phone">Телефон</label>
+                    <input type="text" name="phone">
+                    <label for="">Телефон</label>
                 </div>
+                <input type="hidden" name="hide" value="specialist">
                 <div class="form-group">
                     <input type="checkbox" id="check6">
                     <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
@@ -1100,18 +1209,19 @@
                 <img src="img/specialist.png" alt="">
                 <div>
                     <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
-                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                    <a href="tel:+79124900777">+7 912-490-07-77</a>
                 </div>
             </div>
-            <form method="POST" class="apartments__form">
+            <form method="POST" action="form.php" class="apartments__form">
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="name">Ваше имя</label>
+                    <input type="text" name="name">
+                    <label for="">Ваше имя</label>
                 </div>
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="phone">Телефон</label>
+                    <input type="text" name="phone">
+                    <label for="">Телефон</label>
                 </div>
+                <input type="hidden" name="hide" value="specialist">
                 <div class="form-group">
                     <input type="checkbox" id="check6">
                     <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
@@ -1146,18 +1256,19 @@
                 <img src="img/specialist.png" alt="">
                 <div>
                     <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
-                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                    <a href="tel:+79124900777">+7 912-490-07-77</a>
                 </div>
             </div>
-            <form method="POST" class="apartments__form">
+            <form method="POST" action="form.php" class="apartments__form">
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="name">Ваше имя</label>
+                    <input type="text" name="name">
+                    <label for="">Ваше имя</label>
                 </div>
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="phone">Телефон</label>
+                    <input type="text" name="phone">
+                    <label for="">Телефон</label>
                 </div>
+                <input type="hidden" name="hide" value="specialist">
                 <div class="form-group">
                     <input type="checkbox" id="check6">
                     <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
@@ -1192,18 +1303,19 @@
                 <img src="img/specialist.png" alt="">
                 <div>
                     <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
-                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                    <a href="tel:+79124900777">+7 912-490-07-77</a>
                 </div>
             </div>
-            <form method="POST" class="apartments__form">
+            <form method="POST" action="form.php" class="apartments__form">
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="name">Ваше имя</label>
+                    <input type="text" name="name">
+                    <label for="">Ваше имя</label>
                 </div>
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="phone">Телефон</label>
+                    <input type="text" name="phone">
+                    <label for="">Телефон</label>
                 </div>
+                <input type="hidden" name="hide" value="specialist">
                 <div class="form-group">
                     <input type="checkbox" id="check6">
                     <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
@@ -1238,18 +1350,19 @@
                 <img src="img/specialist.png" alt="">
                 <div>
                     <p><span>Мария Водникова</span> <br> руководитель офиса продаж</p>
-                    <a href="tel:+790000000000">+7 900-000-000-00</a>
+                    <a href="tel:+79124900777">+7 912-490-07-77</a>
                 </div>
             </div>
-            <form method="POST" class="apartments__form">
+            <form method="POST" action="form.php" class="apartments__form">
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="name">Ваше имя</label>
+                    <input type="text" name="name">
+                    <label for="">Ваше имя</label>
                 </div>
                 <div class="form-group">
-                    <input type="text">
-                    <label for="" name="phone">Телефон</label>
+                    <input type="text" name="phone">
+                    <label for="">Телефон</label>
                 </div>
+                <input type="hidden" name="hide" value="specialist">
                 <div class="form-group">
                     <input type="checkbox" id="check6">
                     <label for="check6">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки <br> персональных данных</a></label>
@@ -1369,6 +1482,7 @@
     </div>
 
 </div>
+
 
 <!-- END CONTENT  -->
 //= template/footer.html
